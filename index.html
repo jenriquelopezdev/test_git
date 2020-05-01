@@ -5,11 +5,13 @@
 
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="javascrypt.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js">
+    </script>
+    <script src="javascrypt.js">
+    </script>
   </head>
   <body>
-  	<div class="container">
+  	<div class="container" id="ocultar">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="form-group">
@@ -23,8 +25,8 @@
         </div>
       </div>
     </div>
-    <div class="container" >
-    <div class="col-sm-12 col-md-6 col-lg-11">
+    <div class="container" id="ocultar">
+    <div class="col-sm-12 col-md-11 col-lg-11">
           <div class="form-group">
     	<small>
 git add .
@@ -36,61 +38,83 @@ En vez de ‘mi primer commit’ pon algo que sea menos genérico y más relevan
         </div>
 </div>
 </div>
-    <div class="container">
+    <div class="container" id="ocultar">
       <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-4">
+        <div class="col-sm-12 col-md-11 col-lg-6">
           <div class="form-group">
             <label for="exampleInputName">*Name</label>
-            <input type="email" class="form-control" id="exampleInputName">
+            <input id="name" class="form-control" type=text name=nombre>
           </div>
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-4">
+        <div class="col-sm-12 col-md-11 col-lg-6">
           <div class="form-group">
-            <label for="text">*Mail</label>
-            <input type="text" class="form-control" id="Mail">
+            *Mail
+           <input id="email" class="form-control" type=text name=email> 
           </div>
         </div>
       </div>
     </div>
-     <div class="container">
+     <div class="container" id="ocultar">
       <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-4">
+        <div class="col-sm-12 col-md-11 col-lg-6">
           <div class="form-group">
-            <label for="exampleInputWeb">WebSite</label>
-            <input type="text" class="form-control" id="exampleInputWeb">
+            <label for="text">WebSite</label>
+            <input id="webSite" class="form-control" type=text name=webSite>
           </div>
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-4">
+        <div class="col-sm-12 col-md-11 col-lg-6">
           <div class="form-group">
             <label for="text">Budget</label>
-            <input type="text" class="form-control" id="Budget">
+            <input type="text" class="form-control" name="budget" id="budget">
           </div>
         </div>
       </div>
     </div>
-     <div class="container">
+     <div class="container" id="ocultar">
       <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-4">
-          <div class="form-group">
-            <label for="exampleInputText">tuneline</label>
-            <input type="text" class="form-control" id="exampleInputText">
+        <div class="col-sm-12 col-md-11 col-lg-6" id="ocultar">
+          <div class="form-group"> 
+            <label for="exampleInputText">tuneline
+              </label>
+                 <input type="number" name="tuneline" class="form-control" id="tuneline">
           </div>
         </div>
-        <div class="col-sm-12 col-md-8 col-lg-4">
+        <div class="col-sm-12 col-md-11 col-lg-6" id="ocultar">
           <div class="form-group">
-            <label for="password">*1+2=</label>
-            <input type="password" class="form-control" id="password">
+            <label for="text">*1+2=</label>
+            <input type="text" class="form-control" name="validate" id="validate">
           </div>
         </div>
-       <div class="container">
-        <div class="col-sm-12 col-md-8 col-lg-9">
+       <div class="container" id="ocultar">
+        <div class="col-sm-12 col-md-11 col-lg-6">
           <div class="form-group">
-            <label for="text">tell me a table about you project
+            <label for="text">...tell me a table about you project
             </label>
-            <textarea class="form-control" name="comentarios" rows="4" cols="20">Escribe aquí tus comentarios</textarea>
+            <div class="container col-sm-12 col-md-11 col-lg-12">
+               <textarea id="message" class="col-lg-16 container" name="message" rows="4" cols="11">
+             </textarea> 
           </div>
+         </div>
         </div>
       </div>
-     </div>
-  </body>
+      <aside class="col-sm-12">
+      	   <div class="rows btnClick col-5 col-mil">
+      	     	<button class="mostrar container btn-primary 
+      	     	col-md-10 col-sm-5 col-lg-12" id="esconder">
+                 <a href="#" class="mostrar">
+                 	<i class="fa fa close"></i>
+                 </a>	
+      	     	Enter
+      	     </button> 
+            </div>
+             </aside>
+             <br>
+             <div>
+             	<h1 class="ver">Bienvenido</h1>
+             	<div>
+             	
+             	</div>
+             </div>
+         </form>
+    </body>
 </html>
