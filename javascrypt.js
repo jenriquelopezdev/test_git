@@ -51,15 +51,27 @@ $(document).ready(function() {
 		// 		function)(htmlexterno){
 		// 			$("cargaexterna").html(htmlexterno);
 	$(document).ready(function(){
-		$(".mostrar").on( "btnClick", function() {
-			// $('#target').show(); //muestro mediante id
-			$('#ver').show(); //muestro mediante clase
-		 });
-		$("#esconder").on( "btnClick", function() {
-			$('#ocultar').hide(); //oculto mediante id
-			// $('.target').hide(); //muestro mediante clase
-		});
+		var btnClick=true;
+
+		$("#show").on('click', function(){
+			if (btnClick) {
+				$(".ver").show();
+				btnClick = !btnClick
+			// 
+			if (btnClick) {
+				$("#ocultar").hiden();
+				btnClick = !btnClick
+			}
+
+	    }
 	});
+
+		$("#btn").on('click',function(){
+			$(".ver").show();
+			// return false
+			
+		});
+     });
         
     $('#btn').click(function () {
 
